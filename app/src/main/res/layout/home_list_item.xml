@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="@dimen/sixteen"
+    android:paddingBottom="@dimen/sixteen"
+    style="@style/horizontal">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/wrapContent"
+        android:id="@+id/homeListHeading"
+        android:textStyle="bold"
+        android:textColor="#a9a9a9"
+        android:padding="@dimen/eight"
+        android:text="@string/app_name"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeListListItem"
+        app:layout_constraintTop_toBottomOf="@id/homeListHeading"
+        style="@style/horizontal"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/navDrawerHome"
+            android:icon="@drawable/ic_outline_home_24px"
+            android:title="@string/navDrawerHome" />
+
+        <item
+            android:id="@+id/navDrawerPeople"
+            android:icon="@drawable/ic_outline_person_outline_24px"
+            android:title="@string/navDrawerPeople" />
+
+        <item
+            android:id="@+id/navDrawerPhone"
+            android:icon="@drawable/circle"
+            android:title="@string/navDrawerPhone" />
+
+        <item
+            android:id="@+id/navDrawerActivatePro"
+            android:icon="@drawable/circle"
+            android:title="@string/navDrawerActivatePro" />
+
+        <item
+            android:id="@+id/navDrawerLanguages"
+            android:icon="@drawable/circle"
+            android:title="@string/navDrawerLanguages" />
+
+        <item
+            android:id="@+id/navDrawerSettings"
+            android:icon="@drawable/ic_outline_settings_24px"
+            android:title="@string/navDrawerSettings" />
+    </group>
+
+</menu>

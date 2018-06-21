@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">Work</string>
+    <string name="placeHolder">Place Holder</string>
+
+    <!-- NAV-DRAWER-STRINGS-->
+    <string name="navDrawerHome">Home</string>
+    <string name="navDrawerPeople">People</string>
+    <string name="navDrawerPhone">On My Phone</string>
+    <string name="navDrawerActivatePro">Activate Pro</string>
+    <string name="navDrawerLanguages">Music Languages</string>
+    <string name="navDrawerSettings">Settings</string>
+
+    <!-- MAIN-MENU-STRINGS-->
+    <string name="menuMainSearch">Search</string>
+    <string name="menuMainNotification">Notification</string>
+    <string name="menuMainSettings">Settings</string>
+
+    <!-- BOTTOM-NAV-STRINGS-->
+    <string name="menuBottomHome">Home</string>
+    <string name="menuBottomRadio">Radio</string>
+    <string name="menuBottomBrowse">Browse</string>
+    <string name="menuBottomMyMusic">My Music</string>
+
+</resources>

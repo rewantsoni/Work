@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_nav_graph"
+    app:startDestination="@id/menuBottomHome">
+
+    <fragment
+        android:id="@+id/menuBottomHome"
+        android:name="com.nrs.rsrey.work.view.fragments.HomeFragment"
+        android:label="home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/homeToRadio"
+            app:destination="@id/menuBottomRadio"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/menuBottomRadio"
+        android:name="com.nrs.rsrey.work.view.fragments.RadioFragment"
+        android:label="radio"
+        tools:layout="@layout/fragment_radio"/>
+
+</navigation>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menuBottomHome"
+        android:icon="@drawable/ic_outline_home_24px"
+        android:title="@string/menuBottomHome" />
+
+    <item
+        android:id="@+id/menuBottomRadio"
+        android:icon="@drawable/ic_outline_radio_24px"
+        android:title="@string/menuBottomRadio" />
+
+    <item
+        android:id="@+id/menuBottomBrowse"
+        android:icon="@drawable/ic_outline_public_24px"
+        android:title="@string/menuBottomBrowse" />
+
+    <item
+        android:id="@+id/menuBottomMyMusic"
+        android:icon="@drawable/ic_outline_person_outline_24px"
+        android:title="@string/menuBottomMyMusic" />
+
+</menu>

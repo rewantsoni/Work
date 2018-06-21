@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/eight"
+    style="@style/wrapContent">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_height="144dp"
+        android:layout_width="144dp"
+        android:src="@color/colorPrimary"
+        android:id="@+id/homeListSingleImage"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/wrapContent"
+        android:text="@string/app_name"
+        android:textColor="#3e3e3e"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/homeListSingleImage"
+        android:id="@+id/homeListSingleName"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/wrapContent"
+        android:text="@string/app_name"
+        android:textColor="#a9a9a9"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/homeListSingleName"
+        android:id="@+id/homeListSingleArtist"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    tools:context="com.nrs.rsrey.work.view.fragments.HomeFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/homeList"
+        style="@style/horizontal"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
