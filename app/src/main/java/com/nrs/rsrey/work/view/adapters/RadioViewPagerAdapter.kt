@@ -21,34 +21,36 @@
  * <http://www.gnu.org/philosophy/why-not-lgpl.html>.
  */
 
-package com.nrs.rsrey.work.view.fragments
+package com.nrs.rsrey.work.view.adapters
 
-
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.nrs.rsrey.work.R
-import com.nrs.rsrey.work.view.adapters.RadioViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_radio.*
+import androidx.fragment.app.FragmentManager
+import androidx.fragment.app.FragmentStatePagerAdapter
+import com.nrs.rsrey.work.view.fragments.RadioArtistFragment
+import com.nrs.rsrey.work.view.fragments.RadioFeaturedFragment
 
-class RadioFragment : Fragment() {
+class RadioViewPagerAdapter(fm: FragmentManager?) : FragmentStatePagerAdapter(fm) {
 
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_radio, container, false)
-    }
+    private val title: Array<String> = arrayOf("Featured", "Artist")
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize()
-    }
-
-    private fun initialize() {
-        radioViewPager.apply {
-            adapter = RadioViewPagerAdapter(fragmentManager)
+    override fun getItem(position: Int): Fragment {
+        return when (position) {
+            0 -> RadioFeaturedFragment()
+            1 -> RadioArtistFragment()
+            else -> RadioFeaturedFragment()
         }
-        radioTabLayout.setupWithViewPager(radioViewPager)
+    }
+
+    override fun getCount(): Int {
+        return 2
+    }
+
+    override fun getPageTitle(position: Int): CharSequence? {
+        return when (position) {
+            0 -> title[0]
+            1 -> title[1]
+            else -> "Error"
+        }
     }
 
 }

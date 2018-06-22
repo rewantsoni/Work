@@ -1,4 +1,3 @@
-<?xml version="1.0" encoding="utf-8"?>
 <!--
   ~     Credit Card Security V1  Copyright (C) 2018  sid-sun
   ~     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
@@ -24,33 +23,16 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/eight"
-    android:background="?selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?selectableItemBackground"
-    style="@style/wrapContent">
-
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_height="144dp"
-        android:layout_width="144dp"
-        android:src="@color/colorPrimary"
-        android:id="@+id/homeListSingleImage"/>
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/matchParent"
+    tools:context="com.nrs.rsrey.work.view.fragments.BrowseFragment">
 
     <androidx.appcompat.widget.AppCompatTextView
         style="@style/wrapContent"
-        android:text="@string/app_name"
-        android:textColor="#3e3e3e"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/homeListSingleImage"
-        android:id="@+id/homeListSingleName"/>
-
-    <androidx.appcompat.widget.AppCompatTextView
-        style="@style/wrapContent"
-        android:text="@string/app_name"
-        android:textColor="#a9a9a9"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/homeListSingleName"
-        android:id="@+id/homeListSingleArtist"/>
+        android:text="@string/placeHolder"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

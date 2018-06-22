@@ -30,25 +30,12 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import com.nrs.rsrey.work.R
-import com.nrs.rsrey.work.view.adapters.RadioViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_radio.*
 
-class RadioFragment : Fragment() {
+class MyMusicFragment : Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_radio, container, false)
+        return inflater.inflate(R.layout.fragment_my_music, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize()
-    }
-
-    private fun initialize() {
-        radioViewPager.apply {
-            adapter = RadioViewPagerAdapter(fragmentManager)
-        }
-        radioTabLayout.setupWithViewPager(radioViewPager)
-    }
 
 }

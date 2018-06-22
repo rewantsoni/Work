@@ -21,34 +21,10 @@
  * <http://www.gnu.org/philosophy/why-not-lgpl.html>.
  */
 
-package com.nrs.rsrey.work.view.fragments
+/*___Generated_by_IDEA___*/
 
+package com.nrs.rsrey.work;
 
-import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.nrs.rsrey.work.R
-import com.nrs.rsrey.work.view.adapters.RadioViewPagerAdapter
-import kotlinx.android.synthetic.main.fragment_radio.*
-
-class RadioFragment : Fragment() {
-
-    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
-        return inflater.inflate(R.layout.fragment_radio, container, false)
-    }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-        initialize()
-    }
-
-    private fun initialize() {
-        radioViewPager.apply {
-            adapter = RadioViewPagerAdapter(fragmentManager)
-        }
-        radioTabLayout.setupWithViewPager(radioViewPager)
-    }
-
+/* This stub is only used by the IDE. It is NOT the R class actually packed into the APK */
+public final class R {
 }

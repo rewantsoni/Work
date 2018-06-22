@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~     Credit Card Security V1  Copyright (C) 2018  sid-sun
   ~     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
   ~     This is free software, and you are welcome to redistribute it
@@ -24,33 +23,24 @@
 
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/eight"
-    android:background="?selectableItemBackground"
-    android:clickable="true"
-    android:focusable="true"
-    android:foreground="?selectableItemBackground"
-    style="@style/wrapContent">
+    style="@style/matchParent"
+    android:padding="@dimen/sixteen">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:layout_height="144dp"
-        android:layout_width="144dp"
-        android:src="@color/colorPrimary"
-        android:id="@+id/homeListSingleImage"/>
+    <ImageView
+        android:id="@+id/nowPlayingCover"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:contentDescription="@string/placeHolder"
+        android:paddingTop="@dimen/sixteen"
+        android:src="@drawable/circle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        style="@style/wrapContent"
-        android:text="@string/app_name"
-        android:textColor="#3e3e3e"
-        android:textSize="14sp"
-        app:layout_constraintTop_toBottomOf="@id/homeListSingleImage"
-        android:id="@+id/homeListSingleName"/>
+    <androidx.appcompat.widget.AppCompatSeekBar
+        android:id="@+id/nowPlayingSeekBar"
+        style="@style/horizontal"
+        android:layout_marginTop="@dimen/sixteen"
+        app:layout_constraintTop_toBottomOf="@id/nowPlayingCover" />
 
-    <androidx.appcompat.widget.AppCompatTextView
-        style="@style/wrapContent"
-        android:text="@string/app_name"
-        android:textColor="#a9a9a9"
-        android:textSize="12sp"
-        app:layout_constraintTop_toBottomOf="@id/homeListSingleName"
-        android:id="@+id/homeListSingleArtist"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

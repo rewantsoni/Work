@@ -8,15 +8,9 @@
             <LayoutPositions>
               <option name="myPositions">
                 <map>
-                  <entry key="homeFragment">
+                  <entry key="menuBottomHome">
                     <value>
                       <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="-32" />
-                            <option name="y" value="58" />
-                          </Point>
-                        </option>
                         <option name="myPositions">
                           <map>
                             <entry key="homeToRadio">
@@ -29,16 +23,9 @@
                       </LayoutPositions>
                     </value>
                   </entry>
-                  <entry key="radioFragment">
+                  <entry key="menuBottomRadio">
                     <value>
-                      <LayoutPositions>
-                        <option name="myPosition">
-                          <Point>
-                            <option name="x" value="280" />
-                            <option name="y" value="57" />
-                          </Point>
-                        </option>
-                      </LayoutPositions>
+                      <LayoutPositions />
                     </value>
                   </entry>
                 </map>

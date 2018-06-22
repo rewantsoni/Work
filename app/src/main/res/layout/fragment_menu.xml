@@ -1,27 +1,55 @@
+<!--
+  ~     Credit Card Security V1  Copyright (C) 2018  sid-sun
+  ~     This program comes with ABSOLUTELY NO WARRANTY; for details type `show w'.
+  ~     This is free software, and you are welcome to redistribute it
+  ~     under certain conditions; type `show c' for details.
+  ~
+  ~ The hypothetical commands `show w' and `show c' should show the appropriate
+  ~ parts of the General Public License.  Of course, your program's commands
+  ~ might be different; for a GUI interface, you would use an "about box".
+  ~
+  ~   You should also get your employer (if you work as a programmer) or school,
+  ~ if any, to sign a "copyright disclaimer" for the program, if necessary.
+  ~ For more information on this, and how to apply and follow the GNU GPL, see
+  ~ <http://www.gnu.org/licenses/>.
+  ~
+  ~   The GNU General Public License does not permit incorporating your program
+  ~ into proprietary programs.  If your program is a subroutine library, you
+  ~ may consider it more useful to permit linking proprietary applications with
+  ~ the library.  If this is what you want to do, use the GNU Lesser General
+  ~ Public License instead of this License.  But first, please read
+  ~ <http://www.gnu.org/philosophy/why-not-lgpl.html>.
+  -->
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     style="@style/matchParent"
     tools:context="com.nrs.rsrey.work.view.fragments.MenuFragment">
 
-    <fragment
-        android:id="@+id/menuNavHost"
-        android:name="androidx.navigation.fragment.NavHostFragment"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginBottom="56dp"
-        app:defaultNavHost="false"
-        app:navGraph="@navigation/bottom_nav_graph" />
+    <!--<fragment-->
+    <!--android:id="@+id/menuNavHost"-->
+    <!--android:name="androidx.navigation.fragment.NavHostFragment"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:layout_marginBottom="56dp"-->
+    <!--app:defaultNavHost="false"-->
+    <!--app:navGraph="@navigation/bottom_nav_graph" />-->
+
+    <FrameLayout
+        android:id="@+id/menuContainer"
+        style="@style/matchParent"
+        android:layout_marginBottom="56dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
-        app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_width="match_parent"
         android:id="@+id/menuBottomNav"
+        android:layout_width="match_parent"
         android:layout_height="56dp"
         android:backgroundTint="#1f1f1f"
         app:itemIconTint="#f6f6f6"
         app:itemTextColor="#f6f6f6"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/bottom_nav_items"
-        tools:override="true"/>
+        tools:override="true" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
